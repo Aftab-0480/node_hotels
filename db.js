@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 // MongoDB connection URL
-const mongoURL = 'mongodb+srv://zeeshananjum623_db_user:Aftab%4099341234@cluster0.legqm91.mongodb.net/';
+const mongoURL = process.env.MONGODB_URL;
 
 mongoose.connect(mongoURL);
 
